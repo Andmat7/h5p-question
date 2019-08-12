@@ -1,10 +1,10 @@
-H5P.Question = (function ($, EventDispatcher, JoubelUI) {
+H5P.QuestionIDO = (function ($, EventDispatcher, JoubelUI) {
 
   /**
    * Extending this class make it alot easier to create tasks for other
    * content types.
    *
-   * @class H5P.Question
+   * @class H5P.QuestionIDO
    * @extends H5P.EventDispatcher
    * @param {string} type
    */
@@ -1041,7 +1041,7 @@ H5P.Question = (function ($, EventDispatcher, JoubelUI) {
     /**
      * Remove feedback
      *
-     * @return {H5P.Question}
+     * @return {H5P.QuestionIDO}
      */
     self.removeFeedback = function () {
 
@@ -1216,11 +1216,11 @@ H5P.Question = (function ($, EventDispatcher, JoubelUI) {
      * @param {string} data.text
      * @param {string} title Title for explanation panel
      *
-     * @return {H5P.Question}
+     * @return {H5P.QuestionIDO}
      */
     self.setExplanation = function (data, title) {
       if (data) {
-        var explainer = new H5P.Question.Explainer(title, data);
+        var explainer = new H5P.QuestionIDO.Explainer(title, data);
 
         if (sections.explanation) {
           // Update section
